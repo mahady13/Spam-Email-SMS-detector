@@ -5,6 +5,9 @@ from nltk.corpus import stopwords
 import string
 from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 tfidf=pickle.load(open('tfidf.pkl','rb'))
 model=pickle.load(open('model.pkl','rb'))
